@@ -10,6 +10,9 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    background: linear-gradient(45deg, #aaa2a2, #e8d1d1, #918e8e);
+    background-size: 400% 400%;
+    animation: animbg 2s ease-in-out infinite;
 }
 
 form {
@@ -21,6 +24,11 @@ form {
     gap: 10px;
     display: flex;
     flex-direction: column;
+    transition: transform .5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 input {
@@ -30,4 +38,13 @@ input {
 
 [type="submit"] {
     cursor: pointer;
+}
+
+@keyframes animbg {
+    form {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
 }

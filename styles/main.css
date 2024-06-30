@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 250px;
+    margin: 0 auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px 10px;
+    outline: none;
+}
+
+[type="submit"] {
+    cursor: pointer;
+}

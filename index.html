@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,18 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <form action="">
-        <label for="login">Логин:</label>
-        <input type="text" id="login" placeholder="Логин">
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" placeholder="Пароль">
-        <input type="submit" value="Войти">
+        <label for="t-login" id="t-label-login">Логин:</label>
+        <input type="text" id="t-login" placeholder="Логин">
+        <label for="t-password" id="t-label-password">Пароль:</label>
+        <input type="password" id="t-password" placeholder="Пароль">
+        <input type="submit" id="t-submit" value="Войти">
+        <button type="button" id="switchlanguage">Русский</button>
     </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.min.js"></script>
+    <script type="module" src="js/i18next.js"></script>
 </body>
+
 </html>

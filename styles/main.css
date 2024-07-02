@@ -4,15 +4,16 @@
     box-sizing: border-box;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
+    --white: #fff
 }
 
 body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg, #aaa2a2, #e8d1d1, #918e8e);
+    background: linear-gradient(45deg, #c80e7a, #aa00ff, #0026ff);
     background-size: 400% 400%;
-    animation: animbg 2s ease-in-out infinite;
+    animation: animbg 5s ease-in-out infinite;
 }
 
 form {
@@ -27,8 +28,12 @@ form {
     transition: transform .5s ease-in-out;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
+}
+
+label {
+    color: var(--white);
 }
 
 input {
@@ -46,5 +51,17 @@ input {
     }
     to {
         background-position: 100% 100%;
+    }
+}
+
+#switchlanguage {
+    background: none;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+
+    &:hover {
+        opacity: .8;
     }
 }
